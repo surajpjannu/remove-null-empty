@@ -40,3 +40,96 @@ public class JsonXmlSupportConfiguration implements WebMvcConfigurer {
 ```
 
 Import RemoveNullAndEmpty.postman_collection.json in postman and test the API's.
+
+# Test 1
+
+Request
+```aidl
+http://localhost:8080/employees.json
+```
+Response
+```aidl
+[
+    {
+        "firstName": "Suraj",
+        "middleName": "Panduranga",
+        "lastName": "Jannu",
+        "age": 26,
+        "salary": 100000
+    },
+    {
+        "firstName": "Pramod",
+        "lastName": "Jannu",
+        "age": 29,
+        "salary": 300000
+    },
+    {
+        "firstName": "Mohan",
+        "lastName": "Mari",
+        "age": 49,
+        "salary": 200000
+    },
+    {
+        "firstName": "Abhilash",
+        "age": 34,
+        "salary": 400000
+    },
+    {
+        "firstName": "Harsha",
+        "age": 28,
+        "salary": 500000
+    },
+    {
+        "firstName": "Imran",
+        "age": 26,
+        "salary": 800000
+    }
+]
+```
+
+
+# Test 2
+
+Request
+```aidl
+http://localhost:8080/employees.xml
+```
+Response
+```aidl
+<List>
+    <item>
+        <firstName>Suraj</firstName>
+        <middleName>Panduranga</middleName>
+        <lastName>Jannu</lastName>
+        <age>26</age>
+        <salary>100000.0</salary>
+    </item>
+    <item>
+        <firstName>Pramod</firstName>
+        <lastName>Jannu</lastName>
+        <age>29</age>
+        <salary>300000.0</salary>
+    </item>
+    <item>
+        <firstName>Mohan</firstName>
+        <lastName>Mari</lastName>
+        <age>49</age>
+        <salary>200000.0</salary>
+    </item>
+    <item>
+        <firstName>Abhilash</firstName>
+        <age>34</age>
+        <salary>400000.0</salary>
+    </item>
+    <item>
+        <firstName>Harsha</firstName>
+        <age>28</age>
+        <salary>500000.0</salary>
+    </item>
+    <item>
+        <firstName>Imran</firstName>
+        <age>26</age>
+        <salary>800000.0</salary>
+    </item>
+</List>
+```
